@@ -1,65 +1,175 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>3x3 Colored Button Grid</title>
-  <style>
-    /* Grid container: creates 3 equal columns */
-    .button-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 15px; /* Space between rows and columns */
-      max-width: 600px;
-      margin: 40px auto;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>5x4 Colored Button Grid</title>
+    <style>
+      body {
+        background: linear-gradient(
+          135deg,
+          rgb(11, 31, 132),
+          rgb(5, 49, 73),
+          rgb(63, 132, 129),
+          rgb(5, 49, 73),
+          rgb(11, 31, 132)
+        );
+        background-size: 350% 350%;
 
-    /* Shared styling for all buttons */
-    .btn {
-      padding: 16px 20px;
-      font-size: 16px;
-      font-weight: bold;
-      color: white;
-      border: none;
-      border-radius: 100px;
-      cursor: pointer;
-      transition: opacity 0.2s ease;
-    }
+        animation: gradient 5s ease infinite;
+        height: 200vh;
+      }
 
-    .btn:hover {
-      opacity: 0.85;
-    }
+      @keyframes gradient {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+      /* Grid container: creates 3 equal columns */
+      .button-grid {
+        display: grid;
+        grid-template-columns: repeat(5, 4fr);
+        gap: 50px; /* Space between rows and columns */
+        max-width: 600px;
+        margin: 40px auto;
+      }
 
-    /* Individual button colors */
-    .btn-1 { background-color: #3fe639; } /* Red */
-    .btn-2 { background-color: #f4a261; } /* Orange */
-    .btn-3 { background-color: #e9c46a; color: #222; } /* Yellow with dark text */
-    .btn-4 { background-color: #2a9d8f; } /* Teal */
-    .btn-5 { background-color: #457b9d; } /* Steel Blue */
-    .btn-6 { background-color: #1d3557; } /* Navy */
-    .btn-7 { background-color: #8338ec; } /* Purple */
-    .btn-8 { background-color: #ff006e; } /* Magenta */
-    .btn-9 { background-color: #38b000; } /* Green */
-  </style>
-</head>
-<body>
+      /* Shared styling for all buttons */
+      .btn {
+        padding: 16px 20px;
+        font-size: 16px;
+        font-weight: bold;
+        color: white;
+        border: none;
+        border-radius: 100px;
+        cursor: pointer;
+        transition: opacity 0.5s ease;
+      }
 
-  <div class="button-grid">
-    <!-- Row 1 -->
-    <button class="btn btn-1">Home</button>
-    <button class="btn btn-2">Profile</button>
-    <button class="btn btn-3">Messages</button>
+      .btn:hover {
+        opacity: 0.55;
+      }
 
-    <!-- Row 2 -->
-    <button class="btn btn-4">Settings</button>
-    <button class="btn btn-5">Analytics</button>
-    <button class="btn btn-6">Reports</button>
+      /* Individual button colors */
+      .btn-1 {
+        background-color: #ff0303;
+        color: #5ec6a2;
+      } /* Red */
+      .btn-2 {
+        background-color: #bd614e;
+        color: #6f5ec6;
+      } /* Orange */
+      .btn-3 {
+        background-color: #b67846;
+        color: #5b1877;
+      } /* Yellow with dark text */
+      .btn-4 {
+        background-color: #2a9d8f;
+        color: #49b928;
+      } /* Teal */
+      .btn-5 {
+        background-color: #457b9d;
+        color: #dd1e1e;
+      } /* Steel Blue */
+      .btn-6 {
+        background-color: #1d3557;
+        color: #eaecee;
+      } /* Navy */
+      .btn-7 {
+        background-color: #8338ec;
+        color: #79b580;
+      } /* Purple */
+      .btn-8 {
+        background-color: #ff006e;
+        color: #751e97;
+      } /* Magenta */
+      .btn-9 {
+        background-color: #38b000;
+        color: #331fb6;
+      } /* Green */
+      .btn-10 {
+        background-color: #b14572;
+        color: #f015d6;
+      } /* Green */
+      .btn-11 {
+        background-color: #b00087;
+        color: #e3c621;
+      } /* Green */
+      .btn-12 {
+        background-color: #255877;
+        color: #19bdd0;
+      } /* Green */
+      .btn-13 {
+        background-color: #b0009b;
+        color: #2ccf26;
+      } /* Green */
+      .btn-14 {
+        background-color: #82c0d4;
+        color: #b81aa8;
+      } /* Green */
+      .btn-15 {
+        background-color: #b02a40;
+        color: #222;
+      } /* Green */
+      .btn-16 {
+        background-color: #d3df29;
+        color: #3015ad;
+      } /* Green */
+      .btn-17 {
+        background-color: #b824c6;
+        color: #22c313;
+      } /* Green */
+      .btn-18 {
+        background-color: #c36e39;
+        color: #1ecad0;
+      } /* Green */
+      .btn-19 {
+        background-color: #b00067;
+        color: #adcf24;
+      } /* Green */
+      .btn-20 {
+        background-color: #b09800;
+        color: #4911ca;
+      } /* Green */
+    </style>
+  </head>
+  <body>
+    <div class="button-grid">
+      <!-- Row 1 -->
+      <button class="btn btn-1">1</button>
+      <button class="btn btn-2">2</button>
+      <button class="btn btn-3">3</button>
+      <button class="btn btn-4">4</button>
 
-    <!-- Row 3 -->
-    <button class="btn btn-7">Billing</button>
-    <button class="btn btn-8">Support</button>
-    <button class="btn btn-9">Log Out</button>
-  </div>
+      <!-- Row 2 -->
+      <button class="btn btn-5">5</button>
+      <button class="btn btn-6">6</button>
+      <button class="btn btn-7">7</button>
+      <button class="btn btn-8">8</button>
 
-</body>
+      <!-- Row 3 -->
+      <button class="btn btn-9">9</button>
+      <button class="btn btn-10">10</button>
+      <button class="btn btn-11">11</button>
+      <button class="btn btn-12">12</button>
+
+      <!-- Row 4 -->
+      <button class="btn btn-13">13</button>
+      <button class="btn btn-14">14</button>
+      <button class="btn btn-15">15</button>
+      <button class="btn btn-16">16</button>
+
+      <!-- Row 5 -->
+      <button class="btn btn-17">17</button>
+      <button class="btn btn-18">18</button>
+      <button class="btn btn-19">19</button>
+      <button class="btn btn-20">20</button>
+    </div>
+  </body>
 </html>
