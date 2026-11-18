@@ -40,6 +40,13 @@
         margin: 40px auto;
       }
 
+      .grid-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+      }
+
       /* Shared styling for all buttons */
       .btn {
         padding: 16px 20px;
@@ -54,6 +61,11 @@
 
       .btn:hover {
         opacity: 0.55;
+      }
+
+      .slider {
+        width: 100%;
+        cursor: pointer;
       }
 
       /* Individual button colors */
@@ -141,35 +153,258 @@
   </head>
   <body>
     <div class="button-grid">
-      <!-- Row 1 -->
-      <button class="btn btn-1">1</button>
-      <button class="btn btn-2">2</button>
-      <button class="btn btn-3">3</button>
-      <button class="btn btn-4">4</button>
+      <div class="grid-item">
+        <button class="btn btn-1">1</button>
+        <input
+          type="range"
+          min="1"
+          max="100"
+          value="50"
+          class="slider"
+          id="slider1"
+        />
+      </div>
 
-      <!-- Row 2 -->
-      <button class="btn btn-5">5</button>
-      <button class="btn btn-6">6</button>
-      <button class="btn btn-7">7</button>
-      <button class="btn btn-8">8</button>
+      <div class="grid-item">
+        <button class="btn btn-2">2</button>
+        <input
+          type="range"
+          min="1"
+          max="100"
+          value="50"
+          class="slider"
+          id="slider2"
+        />
+      </div>
 
-      <!-- Row 3 -->
-      <button class="btn btn-9">9</button>
-      <button class="btn btn-10">10</button>
-      <button class="btn btn-11">11</button>
-      <button class="btn btn-12">12</button>
+      <div class="grid-item">
+        <button class="btn btn-3">3</button>
+        <input
+          type="range"
+          min="1"
+          max="100"
+          value="50"
+          class="slider"
+          id="slider3"
+        />
+      </div>
 
-      <!-- Row 4 -->
-      <button class="btn btn-13">13</button>
-      <button class="btn btn-14">14</button>
-      <button class="btn btn-15">15</button>
-      <button class="btn btn-16">16</button>
+      <div class="grid-item">
+        <button class="btn btn-4">4</button>
+        <input
+          type="range"
+          min="1"
+          max="100"
+          value="50"
+          class="slider"
+          id="slider4"
+        />
+      </div>
 
-      <!-- Row 5 -->
-      <button class="btn btn-17">17</button>
-      <button class="btn btn-18">18</button>
-      <button class="btn btn-19">19</button>
-      <button class="btn btn-20">20</button>
+      <div class="grid-item">
+        <button class="btn btn-5">5</button>
+        <input
+          type="range"
+          min="1"
+          max="100"
+          value="50"
+          class="slider"
+          id="slider5"
+        />
+      </div>
+
+      <div class="grid-item">
+        <button class="btn btn-6">6</button>
+        <input
+          type="range"
+          min="1"
+          max="100"
+          value="50"
+          class="slider"
+          id="slider6"
+        />
+      </div>
+
+      <div class="grid-item">
+        <button class="btn btn-7">7</button>
+        <input
+          type="range"
+          min="1"
+          max="100"
+          value="50"
+          class="slider"
+          id="slider7"
+        />
+      </div>
+
+      <div class="grid-item">
+        <button class="btn btn-8">8</button>
+        <input
+          type="range"
+          min="1"
+          max="100"
+          value="50"
+          class="slider"
+          id="slider8"
+        />
+      </div>
+
+      <div class="grid-item">
+        <button class="btn btn-9">9</button>
+        <input
+          type="range"
+          min="1"
+          max="100"
+          value="50"
+          class="slider"
+          id="slider9"
+        />
+      </div>
+
+      <div class="grid-item">
+        <button class="btn btn-10">10</button>
+        <input
+          type="range"
+          min="1"
+          max="100"
+          value="50"
+          class="slider"
+          id="slider10"
+        />
+      </div>
+
+      <div class="grid-item">
+        <button class="btn btn-11">11</button>
+        <input
+          type="range"
+          min="1"
+          max="100"
+          value="50"
+          class="slider"
+          id="slider11"
+        />
+      </div>
+
+      <div class="grid-item">
+        <button class="btn btn-12">12</button>
+        <input
+          type="range"
+          min="1"
+          max="100"
+          value="50"
+          class="slider"
+          id="slider12"
+        />
+      </div>
+
+      <div class="grid-item">
+        <button class="btn btn-13">13</button>
+        <input
+          type="range"
+          min="1"
+          max="100"
+          value="50"
+          class="slider"
+          id="slider13"
+        />
+      </div>
+
+      <div class="grid-item">
+        <button class="btn btn-14">14</button>
+        <input
+          type="range"
+          min="1"
+          max="100"
+          value="50"
+          class="slider"
+          id="slider14"
+        />
+      </div>
+
+      <div class="grid-item">
+        <button class="btn btn-15">15</button>
+        <input
+          type="range"
+          min="1"
+          max="100"
+          value="50"
+          class="slider"
+          id="slider15"
+        />
+      </div>
+
+      <div class="grid-item">
+        <button class="btn btn-16">16</button>
+        <input
+          type="range"
+          min="1"
+          max="100"
+          value="50"
+          class="slider"
+          id="slider16"
+        />
+      </div>
+
+      <div class="grid-item">
+        <button class="btn btn-17">17</button>
+        <input
+          type="range"
+          min="1"
+          max="100"
+          value="50"
+          class="slider"
+          id="slider17"
+        />
+      </div>
+
+      <div class="grid-item">
+        <button class="btn btn-18">18</button>
+        <input
+          type="range"
+          min="1"
+          max="100"
+          value="50"
+          class="slider"
+          id="slider18"
+        />
+      </div>
+
+      <div class="grid-item">
+        <button class="btn btn-19">19</button>
+        <input
+          type="range"
+          min="1"
+          max="100"
+          value="50"
+          class="slider"
+          id="slider19"
+        />
+      </div>
+
+      <div class="grid-item">
+        <button class="btn btn-20">20</button>
+        <input
+          type="range"
+          min="1"
+          max="100"
+          value="50"
+          class="slider"
+          id="slider20"
+        />
+      </div>
     </div>
+
+    <script>
+      const sliders = document.querySelectorAll(".slider");
+      const buttons = document.querySelectorAll(".btn");
+      sliders.forEach((slider, index) => {
+        slider.addEventListener("input", () => {
+          const value = slider.value;
+          buttons[index].style.padding = value / 5 + "px";
+          buttons[index].style.fontSize = value / 5 + "px";
+          buttons[index].style.opacity = value / 100;
+        });
+      });
+    </script>
   </body>
 </html>
